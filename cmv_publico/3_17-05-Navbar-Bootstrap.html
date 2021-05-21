@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicando Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="./3_style.css" rel="stylesheet"/>
+</head>
+<body>
+    <!-- Bootstrap CSS, para dinamizar el desplegable-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">LOGO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Fuego</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hielo</a>
+              </li>
+              <li class="nav-item"></li>
+                <a class="nav-link" href="#">Tierra</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ejercicios
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Ejercicio 1</a></li>
+                  <li><a class="dropdown-item" href="#">Ejercicio 2</a></li>
+                  <li><a class="dropdown-item" href="#">Ejercicio 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <h1>Tus Elementos</h1>
+    <div class="container">
+        <div id="fire">
+            <h2 id="point">Siente el Fuego</h2>
+            <h3>Arde</h3>
+            <img src="./image/ardiente.jpg">
+            <h3>Observa</h3>
+            <img src="./image/fire.jpg">
+            <h3>Fuego</h3>
+            <img src="./image/fuego.jpg">
+        </div>
+        <br/><br/><br/>
+        <div id="ice">
+            <h3>Crujir</h3>
+            <img src="./image/ice.jpg">
+            <h3>Ver</h3>
+            <img src="./image/fuegoVegetal.jpg">
+            <h3>Sentir</h3>
+            <img src="./image/burbuja.jpg">
+         </div>
+         <br/><br/><br/>
+         <div id="eart">
+            <h3>Color</h3>
+            <img src="./image/multicolor.jpg">
+            <h3>Entorno</h3>
+            <img src="./image/blue.jpg">
+            <h3>Percibir</h3>
+            <img src="./image/mira.jpg">
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi hic labore nulla aliquid, voluptatem quis mollitia. Vel eius consectetur numquam?</p>
+
+        <footer>
+            <br/><br/><br/>
+		    <div>&copy; 2020 <a href="https://www.linkedin.com/in/leidy-johana-rios/" target="_blank">Leidy Johana Rios</a></div>
+        </footer>
+    </div>
+
+</body>
+</html>
