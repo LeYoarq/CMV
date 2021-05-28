@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--
+HTML
+web o pagina: Ejercicio Javascript
+entorno: curso Accenture-CMV
+autor: Leidy Johana Rios
+fecha: Mayo 2021
+Hacer el boton cambie pagina 
+-->
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- importante SEO para la etiqueta del navegador -->
+	<title>Titulo en Etiqueta del Navegador</title>
+	<!-- una hoja de estilos personalizada-->
+	<!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- solo aquellos estilos que solo aplican a esta pagina -->
+    <style>
+		body {
+		  margin: 0;
+		  font-family: Arial, Helvetica, sans-serif;
+		}
+		
+		.topnav {
+		  overflow: hidden;
+		  background-color: #333;
+		}
+		
+		.topnav a {
+		  float: left;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+		
+		.topnav a:hover {
+		  background-color: rgb(231, 136, 156);
+		  color: black;
+		}
+		
+		.topnav a.active {
+		  background-color: #b41a48ec;
+		  color: white;
+		}
+	</style>
+	
+</head>
+<!-- Libreria Jquery-->
+<body onload="cargaPagina()">
+
+	<!-- cabecera de pagina -->
+	<header>
+		<h1>VARIABLE DE WEBSTORAGE</h1>
+		<h2>sessionStorage</h2>
+		<h2>Usted es: <span id="msUsr"></span></h2>
+		<br />	
+	</header>
+
+	<!-- bloque de contenido de la pagina -->
+	<main>
+		<div class="topnav">
+			<a class="active" href="#home">Ingresa</a>
+			<a href="#news">Pagina 2</a>
+		</div>
+		<section id="acceso">
+			<!--Area para ingresar-->
+			<p>Por favor ingrese al sistema</p>
+			<input type="text" id="usuario" name="usuario" maxlength="10" placeholder="(usuario)">
+			<button onclick="ingresar()">Ingresar</button>
+		</section>
+		<section id="desconectar">
+			<!--Area para desconectar-->
+			<p>Desconectar</p>
+			<button onclick="salir()">Desconectar</button>
+		</section>
+		
+		<br>
+		<p>Elija su color fondo</p>
+		<input type="color" id="miColor" name="favcolor" value="#ff0000">
+		<button onclick="cambiarColor()">Aplicar color de fondo</button>
+	</main>
+
+	<script>
+		//función 5 Salir del logui
+		function salir() {
+			sessionStorage.removeItem("usuarioLogueado");
+			location.reload();
+		}
+		//función 4 Cargar pagina
+		function cargaPagina() {
+			iniColorFondo();
+			mostrarUsuario();
+
+		}
+		//función 3
+		function ingresar() {
+			sessionStorage.setItem("usuarioLogueado",$("#usuario").val());
+			mostrarUsuario();
+		}
+		//función 3.1
+			function mostrarUsuario() {
+			if (sessionStorage.getItem("usuarioLogueado")) {
+				$("#msUsr").text(sessionStorage.getItem("usuarioLogueado"));
+				$("#acceso").hide();
+				$("#desconectar").show();
+			}else{
+				$("#msgUsr").text("usuario no registrado");
+				$("#desconectar").hide();
+				$("#acceso").show();
+			}
+		}
+		//función 2
+		function iniColorFondo(){
+			if (localStorage.getItem("colorFondoLeidy")){
+				$("body").css("background-color",localStorage.getItem("colorFondoLeidy"));
+			}
+		}
+		//función 1
+		function cambiarColor() {
+			// obtengo el color de la elección del formulario
+			let colorFondo=$("#miColor").val();
+			//Aplico el color al fondo de la pagina
+			$("body").css("background-color",colorFondo);
+
+			localStorage.setItem("colorFondoLeidy",colorFondo);
+			sessionStorage.setItem("colorFondoLeidy",colorFondo);
+		}
+		
+		
+	</script>	
+	<!-- pie de pagina -->
+	<footer>
+		<div>
+			&copy; 2021
+			<a href="https://www.linkedin.com/in/leidy-johana-rios/" target="_blank">Leidy Johana Rios</a>
+		</div>
+	</footer>
+</body>
+
+</html>
