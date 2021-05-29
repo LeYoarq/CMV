@@ -7,16 +7,17 @@
     <title>Aplicando Bootstrap</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link href="./3_style.css" rel="stylesheet"/>
+    <link href="./3_styleBtp.css" rel="stylesheet"/>
 </head>
-<body>
+<body background="../cmv_publico/image/fondo2.jpg">
     <!-- Bootstrap CSS, para dinamizar el desplegable-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Navbar 
+    <nav class="navbar  navbar-light bg-light">-->
+    <nav class="navbar navbar-light navbar-expand" style="background-color: rgba(137, 174, 180, 0.637)">
         <div class="container-fluid">
-          <a class="navbar-brand hidden-lg-up" href="#">
-            <img id="logo" src="../cmv_publico/image/Logo-Leidy-Rios-CMV.png" >
+          <a class="navbar-brand hidden-lg-up" href="../cmv_publico/index.html">
+            <img id="logo" src="../cmv_publico/image/Logo-Leidy-Rios-CMV.png">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,39 +25,51 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Fuego</a>
+                <a class="nav-link active" aria-current="page" href="../cmv_privado/1_14-05-Fotos.html">Ejercicio 1</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Hielo</a>
+                <a class="nav-link" href="../cmv_privado/2_17-05-Transiciones.html">Ejercicio 2</a>
               </li>
-              <li class="nav-item"></li>
-                <a class="nav-link" href="#">Tierra</a>
+              <li class="nav-item">
+                <a class="nav-link" href="../cmv_privado/3_17-05-Navbar.html">Ejercicio 3</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Ejercicios
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Ejercicio 1</a></li>
-                  <li><a class="dropdown-item" href="#">Ejercicio 2</a></li>
-                  <li><a class="dropdown-item" href="#">Ejercicio 3</a></li>
+                  <li><a class="dropdown-item" href="../cmv_privado/1_14-05-Fotos.html">Ejercicio 1</a></li>
+                  <li><a class="dropdown-item" href="../cmv_privado/2_17-05-Transiciones.html">Ejercicio 2</a></li>
+                  <li><a class="dropdown-item" href="../cmv_privado/3_17-05-Navbar.html">Ejercicio 3</a></li>
                 </ul>
               </li>
             </ul>
           </div>
         </div>
     </nav>
-    <h1>Tus Elementos</h1>
+    <h1>Ejercicio 3 con Bootstrap</h1>
     <div class="container">
-        <div id="fire">
-            <h2 id="point">Siente el Fuego</h2>
-            <h3>Arde</h3>
-            <img src="./image/ardiente.jpg">
-            <h3>Observa</h3>
-            <img src="./image/fire.jpg">
-            <h3>Fuego</h3>
-            <img src="./image/fuego.jpg">
-        </div>
+      <h2 id="point">Siente el Fuego</h2>
+      <div class="fire">   
+          <div class="imgD">
+              <h3>Arde</h3>
+              <picture>                    
+                  <img src="../cmv_publico/image/ardiente.jpg">
+              </picture>  
+          </div>  
+          <div class="imgD">
+              <h3>Observa</h3>
+              <picture>                
+                  <img src="../cmv_publico/image/fire.jpg">
+              </picture> 
+          </div>  
+          <div class="imgD">
+              <picture>
+                  <h3>Fuego</h3>
+                  <img src="../cmv_publico/image/fuego.jpg">
+              </picture> 
+          </div>    
+      </div> 
         <br/><br/><br/>
         <div id="ice">
             <h3>Crujir</h3>

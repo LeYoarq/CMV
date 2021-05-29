@@ -62,30 +62,6 @@ h1{
     font-weight: bold;
     margin-right: .1em;
   }
-  
-/*Menu / Navbar*/
-
-nav{
-	text-align: center;
-	background-color: rgb(187, 206, 204);
-}
-
-nav ul{
-	list-style: none; 
-	display: inline-flex;
-	padding: 0;
-	margin: 0;
-}
-
-nav ul li{
-	padding: 1.5rem;
-	color:rgb(190, 29, 107);
-}
-
-nav ul li:hover{
-	background-color: rgba(0,0,0, .4);
-	color: var(--white);
-}
 
 /*Footer*/
 footer{
