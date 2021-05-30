@@ -95,7 +95,10 @@ main#content{
 	transform: scale(.9);
 }
 
-/*Hover*/
+/*Funcionado a ver que pasa /
+
+
+/*Mejorar el hover*/
 figure {
 	width: 500px;
 	margin: 0;
@@ -119,6 +122,39 @@ figure:hover+span {
 	-webkit-transform: scale(1.3);
 	transform: scale(1.3);
 }
+
+
+
+/*MEDIA*/
+@media screen and (max-width: 1300px){
+	
+	.gallery {
+		display: block ;
+	}
+	
+	.gallery .relativeDiv{
+		margin:auto;
+	}
+
+}
+
+@media screen and (max-width: 760px){
+	 header h1{
+		margin-left: var(--unit);
+	}
+
+	header h1 > span{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.hideOnSmall{
+		display: none;
+	} 
+}
+
+
 
 /*Footer*/
 footer{
