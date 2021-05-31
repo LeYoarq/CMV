@@ -77,7 +77,7 @@ main#content{
   display: flex;
   justify-content: center;
   align-content: flex-start;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .gallery .hover01 {
@@ -129,7 +129,7 @@ figure:hover+span {
 @media screen and (max-width: 1300px){
 	
 	.gallery {
-		display: block ;
+		/*display: block ;*/
 	}
 	
 	.gallery .relativeDiv{
