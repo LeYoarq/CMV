@@ -8,3 +8,18 @@
 // 2. menor a mayor 
 // mostrar el array ordenado.
 
+var arr = [];
+for (let i = 0; i < 7; i++) {
+    arr.push(parseInt(Math.random() * 7 + 1));
+}
+function ordered() {
+    orderedValues = arr.sort((a, b) => {
+        return a - b;
+    });
+    document.getElementById("mayorMenor").innerHTML = orderedValues;
+}
+
+function reverse() {
+    reverseValues = arr.reverse();
+    document.getElementById("mayorMenor").innerHTML = reverseValues;
+}
