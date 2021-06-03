@@ -1,21 +1,7 @@
-// ejercicios con arrays
-
-
-// pasos ejercicio con XML:
-// generar el array desde el XML
-// AÑADIR un botón para cada orden:
-// 1 - ascendente por nombre de usuario
-// 2 - asecendente por clave de usuario
-// 3 - mostrar solamente el usuario solicitado
-//    (input - .slice .indexOf)
-
-// variable global de la pagina
-// un array con un elemento por cada usuario del XML
-// en realidad será un array de arrays, una matriz bidimensional
 let registrados = [];
+var musica = []; //Array con mis elementos
 
-
-function leerXML() {
+function readXML() {
     // lee desde GitHub.
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
@@ -23,45 +9,46 @@ function leerXML() {
             cargarArray(this);
         }
     };
-    //xhr.open("GET", "https://carlosboniniklison.github.io/publico/ejercicios/xml/registrados2.xml", true);
-    xhr.open("GET", "registrados2.xml", true);
+    xhr.open("GET", "https://leyoarq.github.io/CMV/cmv_privado/JS/3-Junio/datos.xml", true);
     xhr.send();
 }
 
 function cargarArray(xml) {
     var i;
-    var usrNom;
-    var usrPsw;
-    var usuario = [];
+    var musNom;
+    var musPie;
+    var nombre = [];
     var xmlDoc = xml.responseXML;
 
-    var x = xmlDoc.getElementsByTagName("usuario");
+
+    var x = xmlDoc.getElementsByTagName("elemento");
     // obtenemos algo así como x=[{USR1},{USR2}...,{CANDIDO}]
 
     // tabla es una variable string que contiene codigo
     // html para poder mostrar en pantalla el XML con formato tabla
 
-    let tabla = "<table><tr><th>EMPLEADO</th><th>CLAVE</th></tr>";
+    let tabla = "<table><tr><th>Bandas</th><th>Fotos Iconicas</th></tr>";
     for (i = 0; i < x.length; i++) {
         // leo las etiquetas que me interesan del objeto
-        let usrNom = x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
-        let usrPsw = x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue;
+        let musNom = x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
+        let musPie = x[i].getElementsByTagName("foto")[0].childNodes[0].nodeValue; //Puse foto 
         // actualizo la tabla de visualización
-        tabla += "<tr><td>" + usrNom + "</td><td>" + usrPsw + "</td></tr>";
+        tabla += "<tr><td>" + musNom + "</td><td>" + "<div> <img src='" + foto + "' /></td></tr>";
         // actualizo el array bidimensional con los usuarios registrados
-        let usuario = [usrNom, usrPsw];
-        registrados.push(usuario);
+        nombre= [musNom, musPie];
+        musica.push(nombre);
+        
     }
     tabla += "</table>"
     document.getElementById("mensaje").innerHTML = tabla;
 
-    // muestro en consola el array de usuarios registrados
-    // una vez depurado, comentamos el codigo siguiente
-    //   registrados.forEach((usuario) => {
-    //       usuario.forEach((datos) => {
-    //           console.log(datos);
-    //       });
-    //   });
+    // muestro en consola el array de orla
+  
+    musica.forEach((nombre) => {
+        elemento.forEach((elemento) => {
+        console.log(datos);
+         });
+    });
 
 }
 
@@ -98,26 +85,24 @@ function desClave() {
     mostrar();
 }
 
-function mostrar() {
-    // muestro en pantalla el array de usuarios registrados
+function showMusic() {
     // en formato tabla en el id solicitado
-    let tabla = "";
-    registrados.forEach((usuario) => {
-        usuario.forEach((datos) => {
+    let bloque = "<section id=\"miOrla\">";// bloque de imagenes
+    registrados.forEach((elemento) => {
+        elemento.forEach((datos) => {
             tabla = "<table><tr><th>EMPLEADO</th><th>CLAVE</th></tr>";
             for (i = 0; i < registrados.length; i++) {
                 // leo las etiquetas que me interesan del objeto
-                usrNom = registrados[i][0];
-                usrPsw = registrados[i][1];
+                elemTit = registrados[i][0];
+                elemImg= registrados[i][1];
                 // actualizo la tabla de visualización
-                tabla += "<tr><td>" + usrNom + "</td><td>" + usrPsw + "</td></tr>";
+                boque += "<div class=\"divOrla\"><img class=\"imgOrla\" src=\" + elemImg + \"/></div>";
                 // actualizo el array bidimensional con los usuarios registrados
             }
-            tabla += "</table>"
+            tabla += "</section>"
+            showMusic();//no sé
         });
     });
     // la mostramos en el html
     document.getElementById("solicitado").innerHTML = tabla;
 }
-
-
