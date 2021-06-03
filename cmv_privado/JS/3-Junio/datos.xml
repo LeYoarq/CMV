@@ -1,0 +1,123 @@
+<?xml versiom="1.0" encoding="utf-8"?>
+<orla>
+    <elemento>
+        <nombre>Queen</nombre>
+        <foto>https://lyricstranslate.com/files/styles/large/public/2_3.png?itok=oWHshLD6</foto>
+        <pie>banda británica de rock</pie>
+        <detalle>formada en 1970 en Londres por el cantante y pianista Freddie Mercury, el guitarrista Brian May, el baterista Roger Taylor y el bajista John Deacon.</detalle>
+    </elemento>
+    <elemento>
+        <nombre>Kiss</nombre>
+        <foto>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpvXHbEoT63A_WDJblbJO8rzIbldL_gGFFJNbBTV28QYxsTa-sqJpzNHlkqmXZnN3k3GM&usqp=CAU</foto>
+        <pie>Banda estadounidense de rock</pie>
+        <detalle>formada en Nueva York en enero de 1973 por el bajista Gene Simmons y el guitarrista Paul Stanley, a los que más tarde se unirían el batería Peter Criss y el guitarrista Ace Frehley.</detalle>
+    </elemento>
+    <elemento>
+        <nombre>Metallica</nombre>
+        <foto>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhtV4y9odRIx2IwJBac0MEE3tFiy-wxg-IF68DeFu_5tY7pbECvP-yfm7e8mEX-2PW_eo&usqp=CAU</foto>
+        <pie>Banda estadounidense de rock</pie>
+        <detalle>Originaria de Los Ángeles, pero con base en San Francisco desde febrero de 1983. Fue fundada en 1981 en Los Ángeles por Lars Ulrich y James Hetfield, a los que se les unirían Dave Mustaine y Ron McGovney</detalle>
+    </elemento>
+    <elemento>
+        <nombre>AC/DC</nombre>
+        <foto>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxmU3GFWRE8TS4a3cvjzt9Jqzgmpo5cjyyC0L9Xo1rRMd1kOfC9OeYSjKEJ_uCYaUe87c&usqp=CAU</foto>
+        <pie>AC/DC es una banda de hard rock británica-australiana</pie>
+        <detalle>Formada en 1973 en Australia por los hermanos escoceses Malcolm y Angus Young.</detalle>
+    </elemento>
+    <elemento>
+        <nombre>Twisted Sister</nombre>
+        <foto>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOqQQvo_DJ_YmIXI55LSNk_QNkKP5czjs8oHO8z-AWGJFPd0HGqhRxPsKCI9oprm82Kog&usqp=CAU</foto>
+        <pie>Twisted Sister es un grupo estadounidense de glam metal</pie>
+        <detalle>Formado en la ciudad de Nueva York en 1973. El grupo fusiona las tácticas impactantes de Alice Cooper, el humor rebelde de la nueva ola del metal británico (NWOBHM) y el extravagante maquillaje de Kiss.</detalle>
+    </elemento>
+    <elemento>
+        <nombre>Led Zeppelin</nombre>
+        <foto>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszbc--i01NEEEDL90YjdAJZOn_dp6GMyJskyT-YF8wfe6Ab5fTdAwIW9Vby3eJzc_h2c&usqp=CAU</foto>
+        <pie>Led Zeppelin fue un grupo británico de hard rock</pie>
+        <detalle>Fundado en Londres en 1968 por el guitarrista Jimmy Page, quien había pertenecido a The Yardbirds. La banda estuvo integrada por John Paul Jones como bajista y teclista, el vocalista Robert Plant y John Bonham a la batería (que había coincidido con Plant en The Band of Joy).</detalle>
+    </elemento>
+    <elemento>
+        <nombre>Warrant</nombre>
+        <foto>https://casaydiseno.com/wp-content/uploads/2019/08/peinados-de-los-80-warrantt.jpg</foto>
+        <pie>Warrant es una banda de heavy metal originaria de Los Ángeles, California, Estados Unidos</pie>
+        <detalle>Formado en Los Angeles por el guitarrista Erik Turner en julio de 1984. A Turner pronto se le unió el bajista Jerry Dixon (que reemplazó al bajista Chris Vincent).</detalle>
+    </elemento>
+    <elemento>
+        <nombre>Nirvana</nombre>
+        <foto>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_zGGZipa8QkW03PH0g3FOEH_6wShAeXsSTci9x7cHLNGUnGkmZyAtV5zIAej38_9nu_w&usqp=CAU</foto>
+        <pie>Nirvana fue una banda de grunge y Punk Rock estadounidense</pie>
+        <detalle>Procedente de Aberdeen, Washington, Estados Unidos fundada por el vocalista y guitarrista Kurt Cobain y el bajista Krist Novoselic en 1987.</detalle>
+    </elemento>
+    <elemento>
+        <nombre>Red Hot Chili Peppers</nombre>
+        <foto>https://nova917.fm/wp-content/uploads/2020/08/Las-bandas-m%C3%A1s-famosas-que-despidieron-a-su-vocalista.jpg?width=1200&enable=upscale</foto>
+        <pie>Red Hot Chili Peppers es una banda de funk rock estadounidense formada en 1983 en Los Ángeles, California.</pie>
+        <detalle>Sus integrantes son, el vocalista Anthony Kiedis, el guitarrista John Frusciante, el bajista Flea y el baterista Chad Smith. El estilo musical de la banda fusiona el funk tradicional con el rock y el rock alternativo incluyendo elementos de otros géneros como el rap, pop rock, heavy metal, dance, punk, hip hop e indie rock.</detalle>
+    </elemento>
+    <elemento>
+        <nombre>Judas Priest</nombre>
+        <foto>https://mariskalrock.com/wp-content/uploads/2018/03/Judas-Priest-p%C3%B3ster-la-heavy-402.jpg</foto>
+        <pie>Banda británica de heavy metal</pie>
+        <detalle>Fundada en 1969 en Birmingham, Inglaterra. Su alineación inicial estuvo liderada por el vocalista Al Atkins, por ello la prensa ha nombrado esta primera etapa como Al Atkin’s Judas Priest. Más tarde a mediados de 1970, Atkins se unió a K.K. Downing, Ian Hill y John Ellis —provenientes del grupo Freight— que se considera como la primera alineación oficial de la agrupación.</detalle>
+    </elemento>
+        <elemento>
+        <nombre>Queen</nombre>
+        <foto>https://lyricstranslate.com/files/styles/large/public/2_3.png?itok=oWHshLD6</foto>
+        <pie>banda británica de rock</pie>
+        <detalle>formada en 1970 en Londres por el cantante y pianista Freddie Mercury, el guitarrista Brian May, el baterista Roger Taylor y el bajista John Deacon.</detalle>
+    </elemento>
+    <elemento>
+        <nombre>Kiss</nombre>
+        <foto>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpvXHbEoT63A_WDJblbJO8rzIbldL_gGFFJNbBTV28QYxsTa-sqJpzNHlkqmXZnN3k3GM&usqp=CAU</foto>
+        <pie>Banda estadounidense de rock</pie>
+        <detalle>formada en Nueva York en enero de 1973 por el bajista Gene Simmons y el guitarrista Paul Stanley, a los que más tarde se unirían el batería Peter Criss y el guitarrista Ace Frehley.</detalle>
+    </elemento>
+    <elemento>
+        <nombre>Metallica</nombre>
+        <foto>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhtV4y9odRIx2IwJBac0MEE3tFiy-wxg-IF68DeFu_5tY7pbECvP-yfm7e8mEX-2PW_eo&usqp=CAU</foto>
+        <pie>Banda estadounidense de rock</pie>
+        <detalle>Originaria de Los Ángeles, pero con base en San Francisco desde febrero de 1983. Fue fundada en 1981 en Los Ángeles por Lars Ulrich y James Hetfield, a los que se les unirían Dave Mustaine y Ron McGovney</detalle>
+    </elemento>
+    <elemento>
+        <nombre>AC/DC</nombre>
+        <foto>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxmU3GFWRE8TS4a3cvjzt9Jqzgmpo5cjyyC0L9Xo1rRMd1kOfC9OeYSjKEJ_uCYaUe87c&usqp=CAU</foto>
+        <pie>AC/DC es una banda de hard rock británica-australiana</pie>
+        <detalle>Formada en 1973 en Australia por los hermanos escoceses Malcolm y Angus Young.</detalle>
+    </elemento>
+    <elemento>
+        <nombre>Twisted Sister</nombre>
+        <foto>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOqQQvo_DJ_YmIXI55LSNk_QNkKP5czjs8oHO8z-AWGJFPd0HGqhRxPsKCI9oprm82Kog&usqp=CAU</foto>
+        <pie>Twisted Sister es un grupo estadounidense de glam metal</pie>
+        <detalle>Formado en la ciudad de Nueva York en 1973. El grupo fusiona las tácticas impactantes de Alice Cooper, el humor rebelde de la nueva ola del metal británico (NWOBHM) y el extravagante maquillaje de Kiss.</detalle>
+    </elemento>
+    <elemento>
+        <nombre>Led Zeppelin</nombre>
+        <foto>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszbc--i01NEEEDL90YjdAJZOn_dp6GMyJskyT-YF8wfe6Ab5fTdAwIW9Vby3eJzc_h2c&usqp=CAU</foto>
+        <pie>Led Zeppelin fue un grupo británico de hard rock</pie>
+        <detalle>Fundado en Londres en 1968 por el guitarrista Jimmy Page, quien había pertenecido a The Yardbirds. La banda estuvo integrada por John Paul Jones como bajista y teclista, el vocalista Robert Plant y John Bonham a la batería (que había coincidido con Plant en The Band of Joy).</detalle>
+    </elemento>
+    <elemento>
+        <nombre>Warrant</nombre>
+        <foto>https://casaydiseno.com/wp-content/uploads/2019/08/peinados-de-los-80-warrantt.jpg</foto>
+        <pie>Warrant es una banda de heavy metal originaria de Los Ángeles, California, Estados Unidos</pie>
+        <detalle>Formado en Los Angeles por el guitarrista Erik Turner en julio de 1984. A Turner pronto se le unió el bajista Jerry Dixon (que reemplazó al bajista Chris Vincent).</detalle>
+    </elemento>
+    <elemento>
+        <nombre>Nirvana</nombre>
+        <foto>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_zGGZipa8QkW03PH0g3FOEH_6wShAeXsSTci9x7cHLNGUnGkmZyAtV5zIAej38_9nu_w&usqp=CAU</foto>
+        <pie>Nirvana fue una banda de grunge y Punk Rock estadounidense</pie>
+        <detalle>Procedente de Aberdeen, Washington, Estados Unidos fundada por el vocalista y guitarrista Kurt Cobain y el bajista Krist Novoselic en 1987.</detalle>
+    </elemento>
+    <elemento>
+        <nombre>Red Hot Chili Peppers</nombre>
+        <foto>https://nova917.fm/wp-content/uploads/2020/08/Las-bandas-m%C3%A1s-famosas-que-despidieron-a-su-vocalista.jpg?width=1200&enable=upscale</foto>
+        <pie>Red Hot Chili Peppers es una banda de funk rock estadounidense formada en 1983 en Los Ángeles, California.</pie>
+        <detalle>Sus integrantes son, el vocalista Anthony Kiedis, el guitarrista John Frusciante, el bajista Flea y el baterista Chad Smith. El estilo musical de la banda fusiona el funk tradicional con el rock y el rock alternativo incluyendo elementos de otros géneros como el rap, pop rock, heavy metal, dance, punk, hip hop e indie rock.</detalle>
+    </elemento>
+    <elemento>
+        <nombre>Judas Priest</nombre>
+        <foto>https://mariskalrock.com/wp-content/uploads/2018/03/Judas-Priest-p%C3%B3ster-la-heavy-402.jpg</foto>
+        <pie>Banda británica de heavy metal</pie>
+        <detalle>Fundada en 1969 en Birmingham, Inglaterra. Su alineación inicial estuvo liderada por el vocalista Al Atkins, por ello la prensa ha nombrado esta primera etapa como Al Atkin’s Judas Priest. Más tarde a mediados de 1970, Atkins se unió a K.K. Downing, Ian Hill y John Ellis —provenientes del grupo Freight— que se considera como la primera alineación oficial de la agrupación.</detalle>
+    </elemento>
+</orla>
