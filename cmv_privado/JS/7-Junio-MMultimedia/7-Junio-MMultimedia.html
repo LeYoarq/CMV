@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- polyfill para soportar CSS3 Media Queries en MS explorer viejos -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- importante SEO para la etiqueta del navegador -->
+	<title>CMS-Accenture - Ejercicio Multimedia</title>
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+	<!-- una hoja de estilos personalizada-->
+	<link href="7-Junio-MMultimedia.css" rel="stylesheet" />
+
+	<!-- iconos u otros elementos externos -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+</head>
+
+<body background="../../../cmv_publico/image/fondo.jpg">
+	<!-- Bootstrap CSS, para dinamizar el desplegable-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+		crossorigin="anonymous"></script>
+	<!-- Navbar -->
+	<nav class="navbar navbar-light navbar-expand" style="background-color: rgba(137, 174, 180, 0.637)">
+		<div class="container-fluid">
+			<a class="navbar-brand hidden-lg-up" href="../../../cmv_publico/index.html">
+				<img id="logo" src="../../../cmv_publico/image/Logo-Leidy-Rios-CMV.png">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page"
+							href="../../../cmv_privado/1_14-05-Fotos.html">HTML / CSS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../../../cmv_privado/2_17-05-Transiciones.html">JAVASCRIPT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../../../cmv_privado/3_17-05-Navbar.html">NODE</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">
+							ANGULAR
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="../../../cmv_privado/1_14-05-Fotos.html">Ejercicio 1</a>
+							</li>
+							<li><a class="dropdown-item" href="../../../cmv_privado/2_17-05-Transiciones.html">Ejercicio
+									2</a>
+							</li>
+							<li><a class="dropdown-item" href="../../../cmv_privado/3_17-05-Navbar.html">Ejercicio 3</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- cabecera de pagina -->
+	<header>
+		<h1>CMS-Accenture - XML / JavaScript / Multimedia</h1>
+		<br />
+	</header>
+
+	<!-- bloque de contenido de la pagina -->
+	<main>
+		<div id="content">
+			<video whith controls autoplay loop muted preload="auto">
+				<source src="multimedia/istockphoto-1131571518-640_adpp_is.mp4" type="video/mp4">
+				<source src="rabbit320.webm" type="video/webm">
+				<track src="multimedia/mensaje.vtt" kind="subtitles" srclang="es" label="Español">
+				<p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a>
+					instead.</p>
+			</video>
+			<video  controls crossorigin>
+                <source src="https://juanillodg.github.io/CMV-Publica/multimedia/Death Star - 33050.mp4" type="video/mp4">
+                <track kind="subtitles" src="https://juanillodg.github.io/CMV-Publica/stream/subtitles.vtt" srclang="es" label="spanish" default>
+                <p>Your browser doesn't support HTML5 video. Here is a <a href="../multimedia/Death Star - 33050.mp4">link to the video</a> instead.</p>
+            </video>
+
+			<audio controls>
+				<source src="multimedia/salamisound-8747289-pouring-champagne-sparkling.mp3" type="audio/mp3">
+				<source src="viper.ogg" type="audio/ogg">
+				<p>Your browser doesn't support HTML5 audio. Here is a <a href="viper.mp3">link to the audio</a> instead.</p>
+			</audio>
+		</div>
+	</main>
+	<!-- pie de pagina -->
+	<br>
+	<br>
+	<br>
+	<br>
+	<footer>
+		<br /><br /><br />
+		<div>&copy; 2021 <a href="https://www.linkedin.com/in/leidy-johana-rios/" target="_blank">Leidy Johana Rios</a>
+		</div>
+	</footer>
+</body>
+
+</html>
