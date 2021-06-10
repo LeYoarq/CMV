@@ -1,125 +1,129 @@
-let canvas = document.getElementById('canvas');
-let ctx = canvas.getContext("2d");
-
-canvas.height = window.innerHeight;
-canvas.width = window.innerWidth;
-console.log(window.innerWidth,window.innerHeight);
-
-let c = canvas.getContext('2d');
-
-let colorArray = [
-  "#C5DADA",
-  "#96B3B4",
-  "#4DB0C3",
-  "#988A77",
-  '#34445D'
-];
-
 /*
- for (let i = 0; i < 10; i++) {
-   c.rect(Math.random() * (innerWidth - 200) + 50, Math.random() * (innerHeight - 200) + 50, 100, 100);
-   c.strokeStyle = 'blue';
-   c.stroke();
- }
+const canvas = document.querySelector(".canvas");
+const ctx = canvas.getContext("2d");
+let circleArray = [];
 
- for (let i = 0; i < 100; i++) {
-   let radius = 50;
-   let x = Math.random() * (innerWidth - radius * 2) + radius;
-   let y = Math.random() * (innerHeight - radius * 2) + radius;
-   c.beginPath();
- c.arc(x, y, radius, 0, Math.PI * 2);
- c.strokeStyle = 'rgba(' + (255 * Math.random()) + ',' + (255 * Math.random()) + ',' + (255 * Math.random()) + ',1)';
-c.stroke();
- }
+//* setting the width of the canvas equals to the height and width of the window
 
+let width = (canvas.width = window.innerWidth);
+let height = (canvas.height = window.innerHeight);
 
-c.beginPath();
-c.arc(x, y, radius, 0, Math.PI * 2);
-c.strokeStyle = 'rgba(' + (255 * Math.random()) + ',' + (255 * Math.random()) + ',' + (255 * Math.random()) + ',1)';
-c.stroke();
+//*creating a random function
 
+function random(max, min) {
+    return Math.random() * (max - min) + min;
+}
+
+//*creating mouse object
+
+const mouse = {
+    x: undefined,
+    y: undefined,
+};
+
+//*interacring with the paerticles
+
+function movementCoordinates(event) {
+    mouse.x = event.x;
+    mouse.y = event.y;
+}
+
+function init() {
+    circleArray = [];
+    for (i = 0; i < 500; i++) {
+        circleArray.push(new Circle());
+    }
+}
+function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    init();
+}
+canvas.addEventListener("mousemove", movementCoordinates);
+window.addEventListener("resize", resize);
+
+const colors = ["#B16F80", "#D1AFD1", "#7C84B1", "#519480", "#F2A60C"];
+
+//*creating circle class
+
+class Circle {
+    constructor() {
+        this.x = random(width, 0);
+        this.y = random(height, 0);
+        this.radius = random(1, 0.5);
+        this.r = this.radius;
+        this.vx = random(0.5, -0.5);
+        this.vy = random(0.5, -0.5);
+        this.color = colors[Math.floor(Math.random() * colors.length)];
+    }
+    draw() {
+        ctx.beginPath();
+        ctx.fillStyle = this.color;
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fill();
+    }
+
+    //* HERE WE ARE ENSURING THAT NO PARTICLE GOES OUT OF THE WINDOW
+
+    update() {
+        if (this.x + this.radius > width || this.x + this.radius < 0) {
+            this.vx = -this.vx;
+        }
+        if (this.y + this.radius > height || this.y + this.radius < 0) {
+            this.vy = -this.vy;
+        }
+        this.x += this.vx;
+        this.y += this.vy;
+    }
+
+    increaseSize() {
+        const dx = mouse.x - this.x;
+        const dy = mouse.y - this.y;
+
+        const d = Math.sqrt(dx * dx + dy * dy);
+        if (d < 40 && this.radius < 15) {
+            this.radius += 1;
+        } else if (this.radius > this.r) {
+            this.radius -= 0.5;
+        }
+    }
+}
+
+//*populating the circle array
+init();
+//* handle particles
+function handleParticle() {
+    for (let i = 0; i < circleArray.length; i++) {
+        circleArray[i].increaseSize();
+        circleArray[i].update();
+        circleArray[i].draw();
+    }
+}
+
+//*creating circles on canvas
+function animate() {
+    ctx.fillStyle = "rgba(1,1,1)";
+    ctx.fillRect(0, 0, width, height);
+    handleParticle();
+    requestAnimationFrame(animate);
+}
+animate();
 */
 
-let mouse = {
-  x: undefined,
-  y: undefined
-}
-const maxRadius = 80;
-window.addEventListener('mousemove', function(e){
-  mouse.x = e.x;
-  mouse.y = e.y;
-})
-
-window.addEventListener('resize', function(){
-  canvas.height = window.innerHeight;
-  canvas.width = window.innerWidth;
-  init();
-})
-
-function Circle(x, y, radius, dx, dy, color) {
-  this.x = x;
-  this.y = y;
-  this.radius = radius;
-  this.dx = dx;
-  this.dy = dy;
-  this.minRadius = radius;
-  
-  // console.log(x, y, radius);
-  this.draw = function () {
-    // console.log('draw')
-    c.beginPath();
-    c.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-    c.strokeStyle = color;
-    c.fillStyle = color;
-    c.fill();
-    c.stroke();
-  }
-  this.update = function () {
-    if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
-      this.dx = -this.dx;
-    }
-    if (this.y + this.radius > innerHeight || this.y - this.radius < 0) {
-      this.dy = -this.dy;
-    }
-    this.x += this.dx;
-    this.y += this.dy;
-
-    // Interactivity
-    if(mouse.x - this.x < 50 && mouse.x - this.x > -50 && mouse.y - this.y < 50 && mouse.y - this.y > -50){
-      if(this.radius < 40){
-        this.radius += 1;
-      }
-    }
-    else if(this.radius > this.minRadius){
-      this.radius -= 1;
-    }
-
-    this.draw();
-  }
-}
-
-let circleArray = []
-function init(){
-  circleArray = [];
-  for (let i = 0; i < 1000; i++) {
-    let radius = Math.random() * 3 + 1;
-    let x = Math.random() * (innerWidth - radius * 2) + radius;
-    let y = Math.random() * (innerHeight - radius * 2) + radius;
-    let dx = (Math.random() - 0.5) * 3;
-    let dy = (Math.random() - 0.5) * 3;
-    let color = colorArray[Math.floor(Math.random() * colorArray.length)];
-    circleArray.push(new Circle(x, y, radius, dx, dy, color));
-  }
-}
-
-
-function animate() {
-  requestAnimationFrame(animate);
-  c.clearRect(0, 0, innerWidth, innerHeight);
-  for (let i = 0; i < circleArray.length; i++) {
-    circleArray[i].update();
-  }
-}
-
-animate();
-init();
+function draw() {
+  var canvas = document.getElementById('bubble');
+  if (canvas.getContext) {
+  var ctx = canvas.getContext('2d');
+ 
+  // 二次贝塞尔曲线
+  ctx.beginPath();
+  ctx.moveTo(75,25);
+  ctx.quadraticCurveTo(25,25,25,62.5);
+  ctx.quadraticCurveTo(25,100,50,100);
+  ctx.quadraticCurveTo(50,120,30,125);
+  ctx.quadraticCurveTo(60,120,65,100);
+  ctx.quadraticCurveTo(125,100,125,62.5);
+  ctx.quadraticCurveTo(125,25,75,25);
+  ctx.stroke();
+   }
+ }

@@ -1,0 +1,38 @@
+<body background="../view/fondo.jpg">
+  <div id="content">
+    <h1>
+      {{title}}
+    </h1>
+    <br />
+    <div class="container">
+
+      <div>
+        <h3>
+          MENÚ
+        </h3>
+      </div>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="/inicio" routerLinkActive="active-link">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="/pagina1" routerLinkActive="active-link"> Pagina 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="/pagina2" routerLinkActive="active-link"> Pagina 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="/pagina3" routerLinkActive="active-link"> Pagina 3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="/pagina4" routerLinkActive="active-link"> Pagina 4</a>
+        </li>
+      </ul>
+      <!-- PONGO ESTO para poder utilizar las Rutas -->
+      <router-outlet></router-outlet>
+
+    </div>
+  </div>
+
+
+</body>

@@ -1,0 +1,35 @@
+.div1 {
+    border-top: 10px solid rgb(0, 110, 255); 
+    border-bottom: 15px solid rgb(255, 0, 119); 
+    height: 120px; 
+    width: 70%;
+    background-color: #b8abbed0;
+}
+.div2 {
+    border: 10px solid rgb(73, 83, 73); 
+    border-radius: 1rem;
+    height: 100px; 
+    width: 70%; 
+    background-color: #9cd476;
+    text-align: center;
+}
+.div3 {
+  border-radius: 1rem;
+  height: 100px;
+  width: 70%;
+  background-color: #7eb1a8;
+  text-align: center;
+}
+.div4 {
+  color: yellow;
+}
+
+p {
+  text-align: justify;
+  color: #9cd476;
+}
+
+h3 {
+  text-align: center;
+  color: #1ad1c2;
+}

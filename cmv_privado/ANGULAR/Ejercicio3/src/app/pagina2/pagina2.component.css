@@ -1,0 +1,37 @@
+#content {
+    width: 80%;
+    margin: 2em auto;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: black;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+    width: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  #content {
+    width: 80%;
+    margin: 2em auto;
+  }
+  
+  p {
+    text-align: justify;
+    color: rgb(55, 44, 94);
+  }
+  
+  h1{
+      color: rgb(54, 61, 30);
+  }
+  
+  h2{
+      color: rgb(189, 233, 109);
+  }

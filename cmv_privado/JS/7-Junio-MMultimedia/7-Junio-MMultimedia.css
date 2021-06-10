@@ -55,32 +55,3 @@ p {
   text-align:center;
   padding: 3em 0;
 }
-
-/*CANVAS SMOKE*/
-
-html,
-body {
-  height: 100%;
-}
-
-canvas {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 10;
-}
-
-.instructions {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  color: #fff;
-  border: 3px solid #fff;
-  border-radius: 6px;
-  padding: 8px;
-}

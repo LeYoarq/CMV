@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    function stringNumber() {
+        let num1 = parseInt(document.getElementById("n1").value);
+        let num2 = parseInt(document.getElementById("n2").value);
+        let num3 = parseInt(document.getElementById("n3").value);
+        let num4 = parseInt(document.getElementById("n4").value);
+        let num5 = parseInt(document.getElementById("n5").value);
+        alert()
+    }
+
+    lista = [9, 22, 3, 40, 55]
+    numMayor = lista[0];
+    suma = 0;
+    for (i = 1; i < 5; i++) {
+
+        if (numMayor < lista[i]) {
+            numMayor = lista[i];
+        }
+
+        console.log("lista[i] " + lista[i] + " Cuando i vale en " + i);
+        console.log("Mayor: " + numMayor);
+    }
+
+    for (i = 0; i < 5; i++) {
+        suma += lista[i];
+    }
+
+    console.log("Mayor: " + numMayor);
+    console.log("Sumadito: " + suma);
+    console.log("Promedio: " + suma / 5);
+
+</script>
+
+<body>
+
+    <div>
+        <p>Ejercicio 4: formulario que me diga cual es el más alto de 5 números introducidos al darle MAYOR.
+            Ejercicio 5. Mismo ejercicio pero que calcule el promedio</p>
+        <p>Ejercicio 6: En un formulario que acepte un mensaje y una letra. Mostrar cuántas veces aparece la letra al
+            darle al botón CALCULAR</p>
+        <h2>Ejercicio 4</h2>
+
+        <h2>Ejercicio 4</h2>
+
+
+
+
+        <form action="hola">
+
+            <input type="string" placeholder="Ecribir un numero" id="n1" /><br><br>
+            <input type="string" placeholder="Ecribir un numero" id="n2" /><br><br>
+            <input type="string" placeholder="Ecribir un numero" id="n3" /><br><br>
+            <input type="string" placeholder="Ecribir un numero" id="n4" /><br><br>
+            <input type="string" placeholder="Ecribir un numero" id="n5" /><br><br>
+            <input type="button" name="name" value="Click enviar">
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>
