@@ -1,0 +1,269 @@
+/*GENERAL AREA*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: rgb(70, 113, 116);
+  font-family: "Courier New", Courier, monospace;
+}
+
+body.noche {
+  background-color: rgba(175, 189, 190, 0.87);
+}
+
+/*Text*/
+h1 {
+  margin-top: var(--unit);
+  margin-left: var(--unit2);
+  text-align: left;
+  color: rgb(70, 113, 116);
+}
+
+/*Links*/
+a:hover {
+  color: rgb(190, 29, 107);
+}
+
+/*Others*/
+hr {
+  margin: 1.5rem auto;
+  width: 100%;
+  border-color: rgb(190, 29, 107);
+  border-style: dashed;
+}
+
+/*GRID AREA*/
+.marco {
+  display: grid;
+  grid-template-columns: 250px repeat(3, 1fr);
+  grid-template-rows: 100px 40px auto 40px;
+  grid-gap: 10px;
+  width: 100%;
+  height: 100vh;
+}
+
+.encabezado {
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 1;
+}
+
+nav {
+  grid-column: 1 / span 4;
+  grid-row: 2 / span 1;
+}
+
+.lado {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.contenido {
+  grid-column: 2 / span 3;
+  grid-row: 3 / span 1;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.pie {
+  grid-column: 1 / span 4;
+  grid-row: 4 / span 1;
+  background-color: rgba(97, 148, 141, 0.918);
+  box-shadow: 0 0 10px 3px rgba(30, 105, 95, 0.705);
+}
+
+/*HEADER AREA*/
+header {
+  margin: 1.5rem;
+}
+
+/*NAVIGATION AREA*/
+nav {
+  text-align: center;
+  background-color: rgba(97, 148, 141, 0.918);
+  box-shadow: 0 0 20px 1px rgba(30, 105, 95, 0.705);
+  color: black;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  padding: 0.65em 2rem;
+  color: black;
+  font-weight: bold;
+}
+
+nav ul li:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: var(--white);
+}
+
+/*MAIN AREA*/
+.lado {
+  padding: 2rem;
+  background-color: rgba(101, 117, 122, 0.74);
+  color: black;
+}
+
+.lado p {
+  text-align: justify;
+}
+
+.lado h2 {
+  margin-bottom: 2rem;
+}
+
+#button {
+  margin: 2em 0.5em;
+  padding: 1em;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+#button:hover {
+  border-color: rgb(190, 29, 107);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+#content {
+  width: 80%;
+  margin: 1.5rem auto;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.gallery .relativeDiv {
+  position: relative;
+  width: 500px;
+  min-height: 300px;
+  margin: 0.5em;
+}
+
+.gallery .animateDiv {
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(0.96);
+  -moz-transform: scale(0.96);
+  -o-transform: scale(0.96);
+  -ms-transform: scale(0.96);
+  transform: scale(0.96);
+}
+
+.gallery .animateDiv:hover {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.gallery .animateDiv:hover img {
+  box-shadow: 0px 13px 9px -9px rgba(97, 148, 141, 0.918);
+  -webkit-box-shadow: 0px 13px 9px -9px rgba(97, 148, 141, 0.918);
+}
+
+.gallery .absoluteDiv {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.gallery .imgAbsoluteDiv picture {
+  width: 100%;
+}
+
+.gallery .imgAbsoluteDiv img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.gallery .textAbsoluteDiv {
+  background-color: rgba(97, 148, 141, 0.404);
+  width: 100%;
+  min-height: 50px;
+  text-align: center;
+  bottom: 2px;
+}
+
+.gallery .textAbsoluteDiv p {
+  margin-top: 1em;
+}
+
+.gallery .textAbsoluteDiv p {
+  margin-top: 1em 0;
+}
+
+.paragraf {
+  margin: 1.5rem 0;
+}
+
+.paragraf h2 {
+  font-family: "Goblin One", cursive;
+  text-align: center;
+}
+
+/*FOOTER AREA*/
+footer {
+  width: var(--allWidth);
+  text-align: center;
+  margin-bottom: var(--unit2);
+  color: var(--black);
+  line-height: 2;
+}
+
+/*MEDIA*/
+@media screen and (max-width: 1300px) {
+  .gallery {
+    display: block;
+  }
+
+  .gallery .relativeDiv {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .lado {
+    display: none;
+  }
+  .contenido {
+    grid-column: 1 / span3;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  header h1 {
+    margin-left: 2rem;
+  }
+
+  header h1 > span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hideOnSmall {
+    display: none;
+  }
+}

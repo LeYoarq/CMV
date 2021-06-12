@@ -1,15 +1,14 @@
-
 body {
   background-color: rgba(111, 170, 157, 0.637);
   margin: 0;
   padding: 0;
   color: black;
-  font-family: 'Courier New', Courier, monospace;
-  width: 100%;  
+  font-family: "Courier New", Courier, monospace;
+  width: 100%;
 }
 
 * {
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 #content {
@@ -55,39 +54,39 @@ ul.circulo {
   cursor: pointer;
 }
 
-h1{
-margin-top: 1em;
-text-align:center;
-color:black;
+h1 {
+  margin-top: 1em;
+  text-align: center;
+  color: black;
 }
 
-h2{
-margin-top: 1em;
-text-align:center;
-color: rgb(122, 44, 83);
+h2 {
+  margin-top: 1em;
+  text-align: center;
+  color: rgb(122, 44, 83);
 }
 
-h5{
+h5 {
   color: rgb(255, 255, 255);
 }
 
-#carouselExampleDark div.carousel-inner div.carousel-item.active div p{
+#carouselExampleDark div.carousel-inner div.carousel-item.active div p {
   color: white;
 }
-a{
-  color:   rgb(30, 105, 95) ;
+a {
+  color: rgb(30, 105, 95);
   text-decoration: none;
 }
 
-a:hover{
+a:hover {
   color: rgb(190, 29, 107);
 }
 
 a.enlace_desactivado {
-    pointer-events: none;
-    cursor: default;
-    text-decoration:line-through;
-    color: rgb(68, 14, 14);
+  pointer-events: none;
+  cursor: default;
+  text-decoration: line-through;
+  color: rgb(68, 14, 14);
 }
 
 .fire {
@@ -97,23 +96,23 @@ a.enlace_desactivado {
   margin-bottom: 4em;
 }
 
-#content    {
-  border-radius: 0.5rem; 
-  text-align: center; 
+#content {
+  border-radius: 0.5rem;
+  text-align: center;
   color: black;
 }
 
 #menuIndex {
-padding: 2em 0 0 2em;
+  padding: 2em 0 0 2em;
 }
 
-#menuIndex p{
-line-height: 1;
-position: relative;
-padding-left: 15px;
+#menuIndex p {
+  line-height: 1;
+  position: relative;
+  padding-left: 15px;
 }
 
-#menuIndex p::before{
+#menuIndex p::before {
   border-style: solid;
   border-width: 0 0 2px 2px;
   content: "";
@@ -128,7 +127,7 @@ padding-left: 15px;
 
 #content .imgD img {
   object-fit: cover;
-  margin: .5em;
+  margin: 0.5em;
   width: 95%;
   height: auto;
 }
@@ -137,10 +136,16 @@ padding-left: 15px;
   text-align: center;
 }
 
-footer{
-width: 100%;
-text-align:center;
-position: fixed;
-bottom: 0;
-margin-bottom: 2em;
+footer {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 2em;
+}
+
+strong {
+  color: rgb(190, 29, 107);
+  font-weight: bold;
+  font-size: 1.2em;
 }

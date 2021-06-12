@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- importante SEO para la etiqueta del navegador -->
+    <title>Ejercicio 04</title>
+
+    <!-- una fuente de Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet" />
+
+    <!-- una hoja de estilos externa-->
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- iconos u otros elementos externos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="marco">
+
+        <div class="encabezado">
+            <header>
+                <h1>SEMANA 2 - DIA / NOCHE</h1>
+            </header>
+        </div>
+
+        <nav>
+            <ul>
+                <a href="../../cmv_publico/index.html">
+                    <li>INICIO</li>
+                </a>
+                <a href="../../cmv_privado/1_14-05-Fotos.html" class="hideOnSmall">
+                    <li>EJERCICIO 01 </li>
+                </a>
+                <a href="../../cmv_privado/2_17-05-Transiciones.html" class="hideOnSmall">
+                    <li>EJERCICIO 02 </li>
+                </a>
+            </ul>
+        </nav>
+
+        <div class="lado">
+            <h2>HAS CLICK</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas similique unde rem eaque accusamus quos
+                et quia, sapiente asperiores distinctio assumenda officiis pariatur maxime corrupti. Illum, cum
+                molestiae, est perferendis repudiandae hic eius enim corporis totam, voluptatem eveniet voluptates quo
+                laboriosam. Qui aspernatur neque harum dignissimos incidunt nemo reprehenderit soluta.
+            </p>
+            <div id="button">VER MODO NOCHE</div>
+
+        </div>
+
+        <div class="contenido">
+            <div id="content">
+                <section class="gallery">
+                    <div class="relativeDiv animateDiv">
+                        <div class="absoluteDiv imgAbsoluteDiv">
+                            <picture> 
+                                <img src="../../cmv_publico/image/color2.jpg" alt="Imagen de una burbuja congelada" />
+                            </picture>
+                        </div>
+                        <div class="absoluteDiv textAbsoluteDiv">
+                            <p>Tiempo y Temperatura</p>
+                        </div>
+                    </div>
+
+                    <div class="relativeDiv animateDiv">
+                        <div class="absoluteDiv imgAbsoluteDiv">
+                            <picture> 
+                                <img src="../../cmv_publico/image/fuegoVegetal.jpg" alt="Hojas rojas con Hielo" />
+                            </picture>
+                        </div>
+                        <div class="absoluteDiv textAbsoluteDiv">
+                            <p>Fuego Vegetal</p>
+                        </div>
+                    </div>
+
+                    <div class="relativeDiv animateDiv">
+                        <div class="absoluteDiv imgAbsoluteDiv">
+                            <picture> 
+                                <img src="../../cmv_publico/image/mira.jpg" alt="Arquitectura Vano" />
+                            </picture>
+                        </div>
+                        <div class="absoluteDiv textAbsoluteDiv">
+                            <p>Objetivo Respirar Centrar</p>
+                        </div>
+                    </div>
+
+                </section>
+
+                <hr>
+
+                <section>
+                    <div class="paragraf">
+                        <h2>LOREM IPSUM</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent molestie laoreet nibh et
+                            tincidunt. Donec in ornare est. Ut vel lobortis nisi.
+                            Nullam condimentum nec ipsum ac porta. Integer aliquet diam ut libero faucibus commodo sit
+                            amet quis justo. Nulla facilisi. Praesent sed accumsan ante.
+                            Aenean a ex egestas, elementum magna pulvinar, placerat felis. Nulla eros leo, finibus at
+                            placerat lacinia, suscipit at diam. Integer in consequat diam,
+                            quis facilisis metus. Ut lobortis mollis fermentum.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="pie">
+			<footer>
+				<br /><br /><br />
+				<div>&copy; 2021 <a href="https://www.linkedin.com/in/leidy-johana-rios/" target="_blank">Leidy Johana
+						Rios</a>
+				</div>
+			</footer>
+        </div>
+
+        <script>
+            $("#button").click(function () {
+                $("body").toggleClass("noche");
+                $("#button").text(($("#button").text() == 'VER MODO NOCHE') ? 'VER MODO DÍA' : 'VER MODO NOCHE').fadeIn();
+            });
+        </script>
+
+</body>
+
+</html>
