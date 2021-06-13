@@ -15,7 +15,6 @@ body h1 {
   text-align: left;
   margin-left: 2em;
   color: rgb(84, 141, 145);
- 
 }
 
 body h2 {
@@ -249,11 +248,16 @@ body .contenido #content .gallery .imgAbsoluteDiv img {
 }
 
 body .contenido #content .gallery .textAbsoluteDiv {
-  background-color: rgba(97, 148, 141, 0.404);
   width: 100%;
   min-height: 50px;
   text-align: center;
   bottom: 2px;
+}
+
+#content section.gallery div.absoluteDiv.textAbsoluteDiv {
+  color: rgb(203, 214, 223);
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 body .contenido #content .gallery .textAbsoluteDiv p {
@@ -264,8 +268,8 @@ body .contenido #content .gallery .textAbsoluteDiv p {
   margin-top: 1em 0;
 }
 
-body .contenido #content .paragraf p{
-	text-align: justify;
+body .contenido #content .paragraf p {
+  text-align: justify;
 }
 
 body .contenido #content .paragraf h2 {
