@@ -15,15 +15,18 @@ function readXML() {
 function cargarArray(xml) {
     var elemento = [];
     var xmlDoc = xml.responseXML;
-
     var x = xmlDoc.getElementsByTagName("elemento");
     for (i = 0; i < x.length; i++) {
-        let musNom = x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
-        let musPie = x[i].getElementsByTagName("foto")[0].childNodes[0].nodeValue;
         
-        elemento = [musNom, musPie];
+        let musNom = x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
+        let musImage = x[i].getElementsByTagName("foto")[0].childNodes[0].nodeValue;
+        let musPie = x[i].getElementsByTagName("pie")[0].childNodes[0].nodeValue;
+        let musDetail = x[i].getElementsByTagName("detalle")[0].childNodes[0].nodeValue;
+        
+        elemento = [musNom, musImage, musPie, musDetail];
         music.push(elemento);
     }
+    showMusic();
 }
 
 function showMusic() {
