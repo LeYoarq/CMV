@@ -92,7 +92,7 @@
     </elemento>
     <elemento>
         <nombre>Led Zeppelin</nombre>
-        <foto>https://d22uy85tnpcynx.cloudfront.net/2020/03/knebworth79_promo_field1_0-1-1024x624.jpg</foto>
+        <foto>https://arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/RSSFYJWTZJCIPOF4ZS3JC77YRQ.jpg</foto>
         <pie>Led Zeppelin fue un grupo británico de hard rock</pie>
         <detalle>Fundado en Londres en 1968 por el guitarrista Jimmy Page, quien había pertenecido a The Yardbirds. La banda estuvo integrada por John Paul Jones como bajista y teclista, el vocalista Robert Plant y John Bonham a la batería (que había coincidido con Plant en The Band of Joy).</detalle>
     </elemento>
@@ -109,6 +109,18 @@
         <detalle>Procedente de Aberdeen, Washington, Estados Unidos fundada por el vocalista y guitarrista Kurt Cobain y el bajista Krist Novoselic en 1987.</detalle>
     </elemento>
     <elemento>
+        <nombre>Red Hot Chili Peppers</nombre>
+        <foto>https://rockfm-cdnmed.agilecontent.com/resources/jpg/8/4/1618224233148.jpg</foto>
+        <pie>Red Hot Chili Peppers es una banda de funk rock estadounidense formada en 1983 en Los Ángeles, California.</pie>
+        <detalle>Sus integrantes son, el vocalista Anthony Kiedis, el guitarrista John Frusciante, el bajista Flea y el baterista Chad Smith. El estilo musical de la banda fusiona el funk tradicional con el rock y el rock alternativo incluyendo elementos de otros géneros como el rap, pop rock, heavy metal, dance, punk, hip hop e indie rock.</detalle>
+    </elemento>
+    <elemento>
+        <nombre>Judas Priest</nombre>
+        <foto>https://i0.wp.com/www.scienceofnoise.net/wp-content/uploads/2020/09/judas-priest-551d225a56cee.jpg</foto>
+        <pie>Banda británica de heavy metal</pie>
+        <detalle>Fundada en 1969 en Birmingham, Inglaterra. Su alineación inicial estuvo liderada por el vocalista Al Atkins, por ello la prensa ha nombrado esta primera etapa como Al Atkin’s Judas Priest. Más tarde a mediados de 1970, Atkins se unió a K.K. Downing, Ian Hill y John Ellis —provenientes del grupo Freight— que se considera como la primera alineación oficial de la agrupación.</detalle>
+    </elemento>
+        <elemento>
         <nombre>Red Hot Chili Peppers</nombre>
         <foto>https://rockfm-cdnmed.agilecontent.com/resources/jpg/8/4/1618224233148.jpg</foto>
         <pie>Red Hot Chili Peppers es una banda de funk rock estadounidense formada en 1983 en Los Ángeles, California.</pie>
