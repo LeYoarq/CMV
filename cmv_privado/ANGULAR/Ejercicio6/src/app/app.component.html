@@ -1,0 +1,32 @@
+<body>
+  <h1>
+    {{title}}
+  </h1>
+  <app-pipes1></app-pipes1>
+  <br />
+  <hr>
+
+  <h4>FACTORIAL</h4>
+  <input type="text" name="fact" [(ngModel)]="num1">
+  <p> Resultado: {{num1 | factorial}}</p>
+
+  <hr>
+  <h4>SUMATORIO</h4>
+  <input type="text" name="sumat" [(ngModel)]="num2">
+  <p> Resultado: {{num2 | sumatorio}}</p>
+
+  <hr>
+  <h4>CUBO</h4>
+  <input type="text" name="cubo" [(ngModel)]="num3">
+  <br><br>
+  <input type="text" name="cubo" [(ngModel)]="num4">
+  <p> Resultado: {{num3 | cubo:num4}}</p>
+
+  <hr>
+  <h4>CUADRADO</h4>
+  <input type="text" name="cuad" [(ngModel)]="num5">
+  <br><br>
+  <input type="text" name="cuad" [(ngModel)]="num6">
+  <p> Resultado: {{num5 | cuadrado:num6}}</p>
+
+</body>
