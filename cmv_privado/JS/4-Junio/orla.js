@@ -8,7 +8,7 @@ function readXML() {
             cargarArray(this);
         }
     };
-    xhr.open("GET", "https://leyoarq.github.io/CMV/cmv_privado/JS/3-Junio/datos.xml", true);
+    xhr.open("GET", "https://leyoarq.github.io/CMV/cmv_privado/JS/4-Junio/datos.xml", true);
     xhr.send();
 }
 
