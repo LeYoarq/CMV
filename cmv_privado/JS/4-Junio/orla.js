@@ -34,75 +34,27 @@ function showMusic() {
     for (i = 0; i < music.length; i++) {
         let elemTit = music[i][0];
         let elemImg = music[i][1];
+        let elemPie = music[i][2];
+        let elemDet = music[i][3];
+
         bloque += 
-        `<figure class="container">
-                
+        `<figure class="container">         
         <div class="flip-box">
             <div class="flip-box-inner">
                 <div class="flip-box-front">
                     <div class="card border-light flex" style="max-width: 18rem;">
                             <img class="img" src="${elemImg}" />
-                            
-                            <div class="card-footer bg-transparent border-success">${elemTit}</div>  
+                            <div class="card-footer bg-transparent">${elemTit}</div>  
                     </div> 
                 </div>
                 <div class="flip-box-back">
-                
-                    <h2>Back Side</h2>
+                    <div>${elemPie}</div>
+                    <div>${elemDet}</div>
                 </div>
             </div> 
         </div>
-    </figure>        
-        
-      `
-
-
-           /* `<figure class="container">
-                <img class="img" src="${elemImg}">
-                <div class="text">
-                    <h3>${elemTit}</h3>
-                </div>
-        </figure> `;*/
+    </figure>`
     }
     bloque += "</section>"
     document.getElementById("mesage").innerHTML = bloque;
 }
-    /*   `<figure class="container">
-                
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <div class="card-body text-success">
-                                <div class="card border-light mb-3" style="max-width: 18rem;">
-                                     <img class="img" src="${elemImg}" />
-                                     <div class="card-footer bg-transparent border-success">${elemTit}</div>  
-                                  </div> 
-                                
-                            </div>  
-
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Back Side</h2>
-                        </div>
-                    </div>
-                </div>
-            </figure>        
-                
-              `
-
-            
-          `<div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                        <div>
-                            <img class="img" src="${elemImg}" />   
-                                <div class="text">
-                                    <h3>${elemTit}</h3>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="flip-box-back">
-                        <h2>Back Side</h2>
-                    </div>
-                </div>
-            </div>`*/
