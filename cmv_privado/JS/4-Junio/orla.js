@@ -47,6 +47,7 @@ function showMusic() {
                     </div> 
                 </div>
                 <div class="flip-box-back">
+                
                     <h2>Back Side</h2>
                 </div>
             </div> 
